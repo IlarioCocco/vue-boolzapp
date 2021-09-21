@@ -7,4 +7,14 @@
 .container-bkg {
     height: 100vh;
     background: linear-gradient(to top, rgb(216, 219, 213) 80%, rgb(0, 150, 136) 10%);
+    position: relative;
+}
+
+.container-Box-Wa {
+    background-color: lightgray;
+    height: 80%;
+    width: 80%;
+    position: absolute;
+    left: 10%;
+    top: 10%;
 }
