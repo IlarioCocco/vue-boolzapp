@@ -12,8 +12,8 @@
 
 .container-Box-Wa {
     background-color: lightgray;
-    height: 85%;
-    width: 85%;
+    height: 80%;
+    width: 80%;
     position: absolute;
     left: 10%;
     top: 10%;
@@ -29,8 +29,16 @@
 .col-right{
     background-color:  rgba(234,234,234,255);
     width: 70%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .img-col-right {
-    
+   background-image: url(' ../img/mine.jpg');
+   width: 100%;
+}
+
+.section-one {
+    background-color: lightpink;
+    height: 60px;
 }
