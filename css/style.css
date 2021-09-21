@@ -31,44 +31,56 @@ ul{
 }
 
 .col-right{
-    background-color:  rgba(234,234,234,255);
+    background-color: rgba(234,234,234,255);
     width: 70%;
-    display: flex;
-    flex-wrap: wrap;
 }
 
 /* sezioni di colonna left */
 .section-one-left,
 .section-two-left {
-    background-color: grey;
-    height: 60px;
+    background-color:rgb(241, 241, 241);
+    height: 50px;
+}
+.section-two-left{
+    background-color: hsl(199, 95%, 77%);
 }
 
-.section-two-left{
-    background-color: khaki;
+.input-text-left {
+    padding: 3px;
+}
+
+.insert {
+    border-radius: 5px;
+    border: none;
+    width: 100%;
 }
 
 /* sezioni di colonna right */
 .header-col-right{
-     height: 80px;
-
+     height: 50px;
 }
 
 .section-one-right {
-    background-color: lightpink;
+    background-color:rgb(241, 241, 241);
     height: 80%;
 }
 
 .img-col-right {
-   background-image: url(' ../img/mine.jpg');
+   background-image: url('../img/mine.jpg');
+   background-repeat: repeat;
+   background-size: 60%;
    width: 100%;
-   background-repeat: ;
+   height: 100%;
 }
 
-.messages-container {
-    height: 100%;
-}
 
 .footer-col-right {
-    height: 80px;
+    height: 50px;
+}
+
+
+/* sezione img avatar */
+.img-avatar {
+    object-fit: cover;
+    width:50%;
 }
