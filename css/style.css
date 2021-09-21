@@ -88,8 +88,20 @@ ul{
     margin-top: 5px;
     margin-bottom: 5px;
     border-radius: 50%;
-   
 }
+
+.img-avatar-michele, .header-right-icon {
+    width: 25%;
+    display: flex;
+    border-radius: 50%;
+}
+
+.nome-michele {
+    color: grey;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
 
 .nome-utente {
     display: flex;
@@ -187,6 +199,10 @@ ul{
 .header-col-right{
      height: 10%;
      background-color:rgb(241, 241, 241);
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     color:lightgray
 }
 
 .img-col-right {
