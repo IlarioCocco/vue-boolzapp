@@ -233,6 +233,7 @@ ul{
     margin-top:15px;
     margin-left:70%;
     border-radius: 10px;
+    position: relative; 
 }
 
 .msg-sent {
@@ -242,18 +243,20 @@ ul{
     margin-top:15px;
     margin-right: 70%;
     border-radius: 10px;
+    position: relative; 
 }
 
 .msg-text {
     margin-bottom: 10px;
     padding: 10px;
-    position: relative; 
+   
 }
 
 .msg-date {
     position: absolute;
-    font-size: 5px;
-    color: rgb(233, 30, 30);
+    left:10px;
+    font-size: 6px;
+    color: rgb(169, 169, 169);
 }
 
 
