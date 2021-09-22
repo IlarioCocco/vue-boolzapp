@@ -65,7 +65,7 @@ ul{
 
 .section-one-left {
     display: flex;
-    justify-content: space-around;
+    justify-content:space-between
 }
 
 .section-campana-left{
@@ -81,12 +81,21 @@ ul{
     margin-bottom: 10px;
 }
 
+
 .avatar-io {
-    padding-top: 5px;
-    padding-bottom: 5px;
+    height: 45px;
     border-radius: 50%;
     display: flex;
+    padding-top: 3px;
 }
+
+.nome-utente {
+    display: flex;
+    align-items: center;
+}
+
+
+
 
 .img-avatar-michele, .header-right-icon {
     width: 45px;
@@ -102,12 +111,6 @@ ul{
 }
 
 
-.nome-utente {
-    display: flex;
-    align-items: center;
-    padding-right: 100px;
-    font-size: 12px;
-}
 
 .circle-nome-utente{
     margin: 10px;
