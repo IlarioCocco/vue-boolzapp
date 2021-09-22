@@ -67,14 +67,11 @@ ul{
     display: flex;
 }
 
-.section-one-left {
+.section-header-left {
     display: flex;
     justify-content:space-between
 }
 
-.section-campana-left{
-    background-color: hsl(199, 95%, 77%);
-}
 
 
 /* sezione img avatar */
@@ -86,17 +83,39 @@ ul{
     margin-bottom: 10px;
 }
 
+/* --------------------------------- */
 .avatar-io {
     height: 45px;
     border-radius: 50%;
     display: flex;
-    
 }
 
 .nome-utente {
     display: flex;
     align-items: center;
+   
 }
+
+/* --------------------------------- */
+.section-campana-left{
+    display: flex;
+    background-color: hsl(199, 95%, 77%);
+}
+
+.ricevi-notifiche {
+    display: flex;
+    align-items: center;
+    padding-left: 8px;
+    padding-top: 15px;
+}
+
+.attiva-notificheP{
+     padding-left: 8px;
+     color: grey;
+}
+
+
+/* --------------------------------- */
 
 .img-avatar-michele, .header-right-icon {
     width: 45px;
@@ -139,15 +158,8 @@ ul{
     margin-left: 10px;
     display: flex;
 }
-
-.ricevi-notifiche {
-    margin-top: 15px;
-    margin-left: 10px;
-}
-
 /* sezione img avatar */
 /* colonna left */
-
 
 
 
@@ -261,16 +273,12 @@ ul{
 
 
 
-
 /* footer section right */
 .footer-col-right {
     height: 50px;
     display: flex;
     justify-content: space-around;
 }
-
-
-
 
 .smile-left-footer {
     display: flex;
