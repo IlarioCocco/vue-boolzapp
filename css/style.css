@@ -206,13 +206,41 @@ ul{
      color:lightgray
 }
 
-.img-col-right {
+.box-right-message {
    background-image: url('../img/mine.jpg');
-   background-repeat: repeat;
+   /* background-repeat: repeat; */
    background-size: 50%;
    width: 100%;
    height: 80%;
-   display: flex;
+   overflow-y: scroll;
+}
+
+.msg  {
+    display: flex;
+}
+
+.msg .msg-sent {
+    background: lightgreen;
+    margin-left: auto;
+}
+
+.msg-text {
+    margin-bottom: 15px;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    width:30%;
+    position: relative; 
+    background: white;
+   
+}
+
+.msg-date {
+    position: absolute;
+    font-size: 10px;
+    right: 5px;
+    bottom: 5px;
+    color: lightgray;
 }
 
 .footer-col-right {
