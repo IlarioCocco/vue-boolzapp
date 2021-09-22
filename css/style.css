@@ -60,7 +60,7 @@ ul{
     border-right: solid lightgrey 1px;
 }  
 
-.section-one-left,
+.section-header-left,
 .section-campana-left {
     background-color:rgb(241, 241, 241);
     height: 50px;
@@ -112,6 +112,7 @@ ul{
      padding-left: 8px;
      color: grey;
 }
+
 /* --------------------------------- */
 
 .img-avatar-michele, .header-right-icon {
