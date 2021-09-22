@@ -113,21 +113,23 @@ ul{
      padding-left: 8px;
      color: grey;
 }
-
 /* --------------------------------- */
-
-.img-avatar-michele, .header-right-icon {
-    width: 45px;
+.principale{
     display: flex;
+    align-items: center;
+}
+
+.img-avatar-michele {
+    height: 45px;
     border-radius: 50%;
     padding-left: 2px;
 }
 
 .nome-michele {
     color: rgb(0, 0, 0);
-    display: flex;
-    align-items: center;
+    margin-top: 10px;
 }
+/* --------------------------------- */
 
 .circle-nome-utente{
     margin: 15px;
@@ -220,10 +222,8 @@ ul{
      background-color:rgb(241, 241, 241);
      display: flex;
      justify-content: space-between;
-     align-items: center;
-     color:lightgray
+     color:lightgray;
 }
-
 
 
 /* section message */
@@ -239,7 +239,6 @@ ul{
    flex-direction: column;
    padding: 50px;
 }
-
 
 
 .msg {
@@ -269,7 +268,6 @@ ul{
     padding-right: 2px;
     padding-bottom: 2px;
 }
-
 
 
 /* footer section right */
