@@ -112,13 +112,14 @@ ul{
 }
 
 .circle-nome-utente{
-    margin: 10px;
+    margin: 15px;
 }
 
 .icon-nome-utente {
-    color: lightgray;
+    color: rgb(191, 191, 191);
     display: flex;
     align-items: center;
+    font-size: 15px;
 }
 
 .bell-white {
@@ -232,7 +233,7 @@ ul{
     background: rgb(213, 249, 186);
     margin-top:15px;
     margin-left:70%;
-    border-radius: 10px;
+    border-radius: 8px;
     position: relative; 
 }
 
@@ -242,19 +243,20 @@ ul{
     background: white;
     margin-top:15px;
     margin-right: 70%;
-    border-radius: 10px;
+    border-radius: 8px;
     position: relative; 
 }
 
 .msg-text {
     margin-bottom: 10px;
     padding: 10px;
-   
+    font-weight: bold;
 }
 
 .msg-date {
     position: absolute;
-    left:10px;
+    top:30px;
+    left:120px;
     font-size: 6px;
     color: rgb(169, 169, 169);
 }
