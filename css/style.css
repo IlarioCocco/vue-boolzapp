@@ -226,37 +226,37 @@ ul{
    overflow-y: scroll;
    display: flex;
    flex-direction: column;
-   padding: 20px;
+   padding: 50px;
 }
 
 
 
 .msg {
     background: rgb(213, 249, 186);
-    margin-top:15px;
-    margin-left:70%;
-    border-radius: 8px;
+    margin-top: 8px;
+    margin-left: 60%;
+    border-radius: 5px;
 }
 
 .msg-sent {
     background: white;
-    margin-top:15px;
-    margin-right: 70%;
-    border-radius: 8px;
+    margin-right: 60%;
+    border-radius: 5px;
 }
 
 .msg-text {
-    margin-bottom: 10px;
-    padding: 10px;
     font-weight: bold;
+    padding-top: 8px;
+    margin-left: 8px;
+
 }
 
 .msg-date {
     font-size: 6px;
     color: rgb(169, 169, 169);
     text-align: right;
-    padding-right: 5px;
-    padding-bottom: 5px;
+    padding-right: 2px;
+    padding-bottom: 2px;
 }
 
 
