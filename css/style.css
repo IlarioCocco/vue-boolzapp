@@ -81,17 +81,18 @@ ul{
     margin-bottom: 10px;
 }
 
-.avatar-io{
-    width: 13%;
-    margin-top: 5px;
-    margin-bottom: 5px;
+.avatar-io {
+    padding-top: 5px;
+    padding-bottom: 5px;
     border-radius: 50%;
+    display: flex;
 }
 
 .img-avatar-michele, .header-right-icon {
-    width: 23%;
+    width: 45px;
     display: flex;
     border-radius: 50%;
+    padding-left: 5px;
 }
 
 .nome-michele {
@@ -162,7 +163,7 @@ ul{
     position: absolute;
     color: lightgray;
     font-size: 10px;
-    top: 20px;
+    top: 15px;
     left: 20px;
 }
 
@@ -204,6 +205,8 @@ ul{
      align-items: center;
      color:lightgray
 }
+
+
 
 .box-right-message {
    background-image: url('../img/mine.jpg');
