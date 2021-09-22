@@ -88,6 +88,7 @@ ul{
     height: 45px;
     border-radius: 50%;
     display: flex;
+    padding-left: 2px;
 }
 
 .nome-utente {
@@ -119,7 +120,7 @@ ul{
     width: 45px;
     display: flex;
     border-radius: 50%;
-    padding-left: 5px;
+    padding-left: 2px;
 }
 
 .nome-michele {
