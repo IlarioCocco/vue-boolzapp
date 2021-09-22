@@ -57,7 +57,7 @@
                     </div>
                     <div class="lista">
                         <ul class="avatar-left">
-                            <li><img class="img-avatar" src="img//avatar_1.jpg" alt="">
+                            <li v-for="(contact, index) in contacts" :key="index" ><img class="img-avatar" src="img//avatar_1.jpg" alt="">
                             <h4 class="name-avatar">Michele</h4>
                             </li>
                             <li class="lista-padre"></li>

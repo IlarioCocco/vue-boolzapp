@@ -141,8 +141,6 @@ ul{
     font-size: 12px;
     margin-top: 15px;
     margin-left: 10px;
-
-
 }
 
 /* sezione img avatar */
@@ -181,7 +179,6 @@ ul{
 
 .insert-footer{
     padding: 10px;
-   
 }
 /* input element */
 /* colonna left */
@@ -211,6 +208,7 @@ ul{
    background-size: 50%;
    width: 100%;
    height: 80%;
+   display: flex;
 }
 
 .footer-col-right {
