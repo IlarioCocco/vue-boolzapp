@@ -96,7 +96,7 @@
                     <!--section messagge -->
                     <div class="box-right-message">
 
-                        <div class="msg"   v-for="message in contacts[0].messages"   v-bind:class="message.status" >
+                        <div class="msg"   v-for="(message, index)message in contacts[0].messages"   v-bind:class="message.status" >
                             <div class="msg-text">
                                 ciao come stai ?
                             </div>
