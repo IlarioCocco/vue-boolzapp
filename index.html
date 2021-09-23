@@ -67,7 +67,7 @@
                             <li  v-for="(contact, index) in contacts"  
                             :key="index"    
                             :class="index == 0 ? 'active' : null"    
-                            @click="selectContact(index)">
+                            @click="indexCurrentContact = index">
 
                                 <img class="img-avatar"  :src="`img/avatar${contact.avatar}.jpg`" :alt="contact.name">
                                 <h4 class="name-avatar">{{contact.name}}</h4>
