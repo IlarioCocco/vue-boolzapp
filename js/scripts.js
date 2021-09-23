@@ -154,8 +154,12 @@ const app = new Vue({
         selecContact(index) {
            this.indexCurrentContact = index;
         }
+    },
 
 
-       
+    methods: {
+        addMsg: function() {
+
+        }
     }
 });

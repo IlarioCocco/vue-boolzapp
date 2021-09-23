@@ -65,8 +65,11 @@
                         <ul class="avatar-left">
                     <!-- ciclo v-for -->
                             <li  v-for="(contact, index) in contacts"  
-                            :key="index"    
-                            :class="index == 0 ? 'active' : null"    
+
+                            :key="index"   
+
+                            :class="index == 0 ? 'active' : null"  
+
                             @click="indexCurrentContact = index">
 
                                 <img class="img-avatar"  :src="`img/avatar${contact.avatar}.jpg`" :alt="contact.name">
@@ -87,8 +90,9 @@
                             <div class="principale">
                                 <img class="img-avatar-michele" 
                                 :src="`img/avatar${contacts[indexCurrentContact].avatar}.jpg`" 
+
                                 :alt="contacts[indexCurrentContact]">
-                                
+
                                 <h4 class="nome-michele">Michele</h4>
                                 <!-- <h6 class="ultimo-accesso ">Ultimo accesso oggi alle</h6> -->
                             </div>
@@ -104,7 +108,13 @@
                     <!--section messagge -->
                     <div class="box-right-message">
                     <!-- ciclo v-for -->
-                        <div class="msg"    v-for="(message, index) in contacts[indexCurrentContact].messages"    :class="message.status"    :key="index" >
+                        <div class="msg"    
+                        v-for="(message, index) in contacts[indexCurrentContact].messages"    
+                        
+                        :class="message.status"    
+                        
+                        :key="index" >
+                        
                             <div class="msg-text">
                                 {{message.message}}
                             </div>
