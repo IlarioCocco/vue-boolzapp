@@ -115,18 +115,20 @@
                         
                         :key="index" >
                         
-                            <div class="msg-text">
+                            <div class="msg-text" >
                                 {{message.message}}
+                                <div class="msg-date">{{message.date}}</div>
                             </div>
-                            <div class="msg-date">{{message.date}}</div>
                         </div>
+
+                    <!-- :class="message.status = sent ? 'msg-text' : 'msg-sent' " -->
 
 
                         <div class="msg-sent">
                             <div class="msg-text">
                                 ciao !!!
+                                <div class="msg-date">15/03/2015 17:00:15</div>
                             </div>
-                            <div class="msg-date">15/03/2015 17:00:15</div>
                         </div>
                         
                     </div> 
@@ -136,7 +138,7 @@
                     <div class="footer-col-right">
                         <i class="far fa-smile smile-left-footer"></i>
                         <div class="input-text-left input-footer">
-                            <input class="insert-footer" type="text" placeholder=" Scrivi un messaggio">
+                            <input @click="addMsg" class="insert-footer" type="text" placeholder=" Scrivi un messaggio">
                         </div>
                         <i class="fas fa-microphone micro-left-footer"></i>
                     </div>

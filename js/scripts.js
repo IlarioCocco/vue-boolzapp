@@ -146,13 +146,22 @@ const app = new Vue({
                 ],
             },
         ],
-        indexCurrentContact: 0
+        indexCurrentContact: 0,
+        newMsg: ''
+        
     },
-
-
+    
+  
     methods: {
         selecContact(index) {
            this.indexCurrentContact = index;
+        },
+
+        
+        addMsg: function() {
+            if (this.newMsg != "") {
+                this.contacts.push(this.newMsg);
+                this.newMsg = '';
         }
     },
     

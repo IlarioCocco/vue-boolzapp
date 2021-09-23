@@ -158,6 +158,7 @@ ul {
     margin-left: 6px;
     margin-top: 8px;
     font-size: 14px;
+    cursor: pointer;
 }
 
 .square-circle {
@@ -291,6 +292,7 @@ ul {
     color: grey;
     font-size: 18px;
     margin-left: 15px;
+    cursor: pointer;
 }
 
 .micro-left-footer {
@@ -299,6 +301,7 @@ ul {
     color: grey;
     font-size: 18px;
     margin-right: 15px;
+    cursor: pointer;
 }
 /* footer section right */
 /* colonna right */
