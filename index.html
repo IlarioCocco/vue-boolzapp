@@ -84,8 +84,8 @@
                                 <h4 class="nome-michele">Michele</h4>
                                 <!-- <h6 class="ultimo-accesso ">Ultimo accesso oggi alle</h6> -->
                             </div>
-                          
                         </div>
+
                         <div class="icon-nome-utente">
                             <i class="fas fa-search circle-nome-utente"></i>
                             <i class="fas fa-paperclip balun-nome-utente"></i>
@@ -96,14 +96,14 @@
                     <!--section messagge -->
                     <div class="box-right-message">
 
-                        <div class="msg">
+                        <div class="msg"   v-for="message in contacts[0].messages"   v-bind:class="message.status" >
                             <div class="msg-text">
                                 ciao come stai ?
                             </div>
                             <div class="msg-date">15/03/2015 17:00:15</div>
                         </div>
 
-                        <div class="msg-sent">
+                        <!-- <div class="msg-sent">
                             <div class="msg-text">
                                 ciao !!!
                             </div>
@@ -122,7 +122,7 @@
                                 ciao come stai ?
                             </div>
                             <div class="msg-date">15/03/2015 17:00:15</div>
-                        </div>
+                        </div> -->
                         
                     </div> 
                     <!--section messagge -->
