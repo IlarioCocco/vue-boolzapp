@@ -138,7 +138,7 @@
                     <div class="footer-col-right">
                         <i class="far fa-smile smile-left-footer"></i>
                         <div class="input-text-left input-footer">
-                            <input @click="addMsg" class="insert-footer" type="text" placeholder=" Scrivi un messaggio">
+                            <input   @keyup.enter="addMsg"   class="insert-footer" type="text" placeholder=" Scrivi un messaggio">
                         </div>
                         <i class="fas fa-microphone micro-left-footer"></i>
                     </div>

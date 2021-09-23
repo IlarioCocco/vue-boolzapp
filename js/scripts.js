@@ -160,8 +160,9 @@ const app = new Vue({
         
         addMsg: function() {
             if (this.newMsg != "") {
-                this.contacts.push(this.newMsg);
+                this.messages.push(this.newMsg);
                 this.newMsg = '';
+            }
         }
     },
     
