@@ -64,12 +64,13 @@
                     <div class="lista">
                         <ul class="avatar-left">
                     <!-- ciclo v-for -->
-                            <li  v-for="(contact, index) in contacts"  :key="index">
+                            <li  v-for="(contact, index) in contacts"  
+                            :key="index"    
+                            :class="index == 0 ? 'active' : null"    
+                            @click="selectContact(index)">
 
-                                <img class="img-avatar" :src="`img/avatar${contact.avatar}.jpg`" :alt="contact.name">
-
+                                <img class="img-avatar"  :src="`img/avatar${contact.avatar}.jpg`" :alt="contact.name">
                                 <h4 class="name-avatar">{{contact.name}}</h4>
-
                             </li>
                             <li class="lista-padre"></li>
                         </ul>
@@ -100,7 +101,7 @@
                     <!--section messagge -->
                     <div class="box-right-message">
                     <!-- ciclo v-for -->
-                        <div class="msg"   v-for="message in contacts[0].messages"   v-bind:class="message.status" >
+                        <div class="msg"    v-for="(message, index) in contacts[indexCurrentContact].messages"    :class="message.status"    :key="index" >
                             <div class="msg-text">
                                 {{message.message}}
                             </div>
