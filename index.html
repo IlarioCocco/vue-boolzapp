@@ -85,7 +85,10 @@
                     <div class="header-col-right">
                         <div class="header-right-icon">
                             <div class="principale">
-                                <img class="img-avatar-michele" src="img//avatar_1.jpg" alt="">
+                                <img class="img-avatar-michele" 
+                                :src="`img/avatar${contacts[indexCurrentContact].avatar}.jpg`" 
+                                :alt="contacts[indexCurrentContact]">
+                                
                                 <h4 class="nome-michele">Michele</h4>
                                 <!-- <h6 class="ultimo-accesso ">Ultimo accesso oggi alle</h6> -->
                             </div>
