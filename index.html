@@ -63,9 +63,13 @@
                     </div>
                     <div class="lista">
                         <ul class="avatar-left">
-                            <li v-for="(contact, index) in contacts" :key="index">
+                    <!-- ciclo v-for -->
+                            <li  v-for="(contact, index) in contacts"  :key="index">
+
                                 <img class="img-avatar" :src="`img/avatar${contact.avatar}.jpg`" :alt="contact.name">
+
                                 <h4 class="name-avatar">{{contact.name}}</h4>
+
                             </li>
                             <li class="lista-padre"></li>
                         </ul>
@@ -95,37 +99,25 @@
 
                     <!--section messagge -->
                     <div class="box-right-message">
-
-                        <div class="msg"   v-for="(message, index)message in contacts[0].messages"   v-bind:class="message.status" >
+                    <!-- ciclo v-for -->
+                        <div class="msg"   v-for="message in contacts[0].messages"   v-bind:class="message.status" >
                             <div class="msg-text">
-                                ciao come stai ?
+                                {{message.message}}
                             </div>
-                            <div class="msg-date">15/03/2015 17:00:15</div>
+                            <div class="msg-date">{{message.date}}</div>
                         </div>
 
-                        <!-- <div class="msg-sent">
+
+                        <div class="msg-sent">
                             <div class="msg-text">
                                 ciao !!!
                             </div>
                             <div class="msg-date">15/03/2015 17:00:15</div>
                         </div>
-
-                        <div class="msg">
-                            <div class="msg-text">
-                                ciao come stai ?
-                            </div>
-                            <div class="msg-date">15/03/2015 17:00:15</div>
-                        </div>
-
-                        <div class="msg">
-                            <div class="msg-text">
-                                ciao come stai ?
-                            </div>
-                            <div class="msg-date">15/03/2015 17:00:15</div>
-                        </div> -->
                         
                     </div> 
                     <!--section messagge -->
+
 
                     <div class="footer-col-right">
                         <i class="far fa-smile smile-left-footer"></i>
