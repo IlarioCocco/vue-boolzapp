@@ -211,18 +211,18 @@ ul {
     margin-left: auto;
     margin-top: 10px;
     width: 40%;
-    padding: 15px;
+    padding: 10px;
     border-radius: 5px;
     align-items: flex-end;
     word-break: break-all;
     font-weight: bold;
 }
 
-.msg-text {
+.msg-ricevuti-bianchi {
     background: white;
-    border-radius: 5px;
+    border-radius: 10px;
     width: 40%;
-    padding: 15px;
+    padding: 10px;
     margin-top: 10px;
 }
 
@@ -231,7 +231,7 @@ ul {
     color: rgb(7, 160, 88);
     text-align: right;
     position: relative;
-    top: 10px;
+    top: 5px;
     left: 5px;
 }
 /* section message */

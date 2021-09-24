@@ -110,12 +110,12 @@
 
 
                     <!-- ciclo v-for -->
-                        <div
+                        <div class=""
                             v-chat-scroll  
                             v-for="(message, index) in contacts[indexCurrentContact].messages"    
                             :key="index" >
                         
-                            <div :class="message.status == 'sent' ? 'msg-inviati-verdi' : 'msg-text' " >
+                            <div :class="message.status == 'sent' ? 'msg-inviati-verdi' : 'msg-ricevuti-bianchi' " >
                                 {{message.message}}
                                 <div class="msg-date">{{message.date}}</div>
                             </div>
