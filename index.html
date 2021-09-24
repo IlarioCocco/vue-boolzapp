@@ -108,17 +108,18 @@
                     <!--section messagge -->
                     <div class="box-right-message">
                     <!-- ciclo v-for -->
-                        <div class="msg"   
+                        <div class="msg"  
                             v-for="(message, index) in contacts[indexCurrentContact].messages"    
                             :class="message.status"    
                             :key="index" >
                         
-                            <div  :class="message.status = sent ? 'msg' : 'msg-sent' " >
+                            <div class="msg-text" >
                                 {{message.message}}
                                 <div class="msg-date">{{message.date}}</div>
                             </div>
                         </div>
 
+                <!-- :class="message.status = sent ? 'msg' : 'msg-sent' " -->
 
                         <div class="msg-sent">
                             <div class="msg-text">

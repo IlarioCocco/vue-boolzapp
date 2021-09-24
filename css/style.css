@@ -49,8 +49,10 @@ ul {
 }
 /* container principali */
 
- 
 
+.contacts li.active {
+    background-color: tomato;
+}
 
 
 /* colonna left */
