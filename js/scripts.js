@@ -161,6 +161,7 @@ const app = new Vue({
         addMsg: function() {
             if (this.newMsg != "") {
                 this.messages.push(this.newMsg);
+                console.log(newMsg)
                 this.newMsg = '';
             }
         }

@@ -108,20 +108,16 @@
                     <!--section messagge -->
                     <div class="box-right-message">
                     <!-- ciclo v-for -->
-                        <div class="msg"    
-                        v-for="(message, index) in contacts[indexCurrentContact].messages"    
+                        <div class="msg"   
+                            v-for="(message, index) in contacts[indexCurrentContact].messages"    
+                            :class="message.status"    
+                            :key="index" >
                         
-                        :class="message.status"    
-                        
-                        :key="index" >
-                        
-                            <div class="msg-text" >
+                            <div  :class="message.status = sent ? 'msg' : 'msg-sent' " >
                                 {{message.message}}
                                 <div class="msg-date">{{message.date}}</div>
                             </div>
                         </div>
-
-                    <!-- :class="message.status = sent ? 'msg-text' : 'msg-sent' " -->
 
 
                         <div class="msg-sent">
@@ -138,7 +134,7 @@
                     <div class="footer-col-right">
                         <i class="far fa-smile smile-left-footer"></i>
                         <div class="input-text-left input-footer">
-                            <input   @keyup.enter="addMsg"   class="insert-footer" type="text" placeholder=" Scrivi un messaggio">
+                            <input v-model="newMsg" @keyup.enter="addMsg()" class="insert-footer" type="text" placeholder=" Scrivi un messaggio">
                         </div>
                         <i class="fas fa-microphone micro-left-footer"></i>
                     </div>
