@@ -162,8 +162,17 @@ const app = new Vue({
                 message: this.newMsg,
                 status: 'sent'
             });
-           
+            // reset input
             this.newMsg = "";
-        }
+
+
+            setTimeout(() => {
+                this.contacts[this.indexCurrentContact].messages.push({
+                    date: dayjs().format('DD/MM/YYYY HH:mm:ss'),
+                    message: 'ok',
+                    status: 'recived'
+                });
+        }, 000);
+      }
     }
 });
