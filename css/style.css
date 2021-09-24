@@ -209,22 +209,20 @@ ul {
 .msg-inviati-verdi{
     background: rgb(213, 249, 186);
     margin-left: 55%;
-    margin-top: 10px;
-    width: 40%;
-    padding: 10px;
-    border-radius: 10px;
-    align-items: flex-end;
-    word-break: break-all;
-    font-weight: bold;
 }
 
 .msg-ricevuti-bianchi {
     background: white;
-    border-radius: 10px;
+    margin-left: 5%;
+}
+
+.msa-base, .msg-inviati-verdi, .msg-ricevuti-bianchi {
+    margin-top: 10px;
     width: 40%;
     padding: 10px;
-    margin-top: 10px;
-    margin-left: 5%;
+    border-radius: 10px;
+    word-break: break-all;
+    font-weight: bold;
 }
 
 .msg-date {
