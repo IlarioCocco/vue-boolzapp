@@ -147,8 +147,7 @@ const app = new Vue({
             },
         ],
         indexCurrentContact: 0,
-        newMsg: ''
-        
+        newMsg: ""
     },
     
   
@@ -156,15 +155,15 @@ const app = new Vue({
         selecContact(index) {
            this.indexCurrentContact = index;
         },
-
         
-        addMsg: function() {
-            if (this.newMsg != "") {
-                this.messages.push(this.newMsg);
-                console.log(newMsg)
-                this.newMsg = '';
-            }
+        addMsg() {
+            this.contacts[this.indexCurrentContact].messages.push({
+                date: dayjs().format('DD/MM/YYYY HH:mm:ss'),
+                message: this.newMsg,
+                status: 'sent'
+            });
+           
+            this.newMsg = "";
         }
-    },
-    
+    }
 });

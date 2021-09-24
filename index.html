@@ -123,7 +123,7 @@
 
                         <div class="msg-sent">
                             <div class="msg-text">
-                                ciao !!!
+                                prova
                                 <div class="msg-date">15/03/2015 17:00:15</div>
                             </div>
                         </div>
@@ -135,7 +135,10 @@
                     <div class="footer-col-right">
                         <i class="far fa-smile smile-left-footer"></i>
                         <div class="input-text-left input-footer">
-                            <input v-model="newMsg" @keyup.enter="addMsg()" class="insert-footer" type="text" placeholder=" Scrivi un messaggio">
+                            <input 
+                            v-model="newMsg" 
+                            @keyup.enter="addMsg()" 
+                            class="insert-footer" type="text" placeholder=" Scrivi un messaggio">
                         </div>
                         <i class="fas fa-microphone micro-left-footer"></i>
                     </div>
@@ -145,6 +148,7 @@
             </div>
         </div>
     </div>
+    <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
     <!-- vue js -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <!-- /vue js -->
