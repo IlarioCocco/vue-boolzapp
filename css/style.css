@@ -189,6 +189,9 @@ ul {
      color:lightgray;
 }
 
+
+
+
 /* section message */
 .box-right-message {
    background-image: url('../img/mine.jpg');
@@ -196,17 +199,28 @@ ul {
    width: 100%;
    height: calc(100% - 100px);
    overflow-y: scroll;
-   padding: 50px;
+   display: flex;
+   flex-direction: column;
 }
 
-.msg {
-    display: flex;
-}
 
-.msg-sent .msg-text {
+/* .msg-sent .msg-text {
     background: rgb(213, 249, 186);
     margin-left: auto;
+} */
+
+
+
+/* debug balloon text messaggi di invio personale a destra */
+.msg-right{
+    background: rgb(213, 249, 186);
+    width: 40%;
+    padding: 15px;
+    border-radius: 5px;
+    align-items: flex-end;
+    margin-left: auto;
 }
+
 
 .msg-text {
     background: white;
@@ -217,6 +231,7 @@ ul {
     font-weight: bold;
     position: relative;
     word-break: break-all;
+     
 }
 
 .msg-date {

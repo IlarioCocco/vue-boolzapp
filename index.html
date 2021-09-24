@@ -107,27 +107,39 @@
 
                     <!--section messagge -->
                     <div class="box-right-message">
+
+
                     <!-- ciclo v-for -->
-                        <div class="msg" 
+                        <div class="" 
+
                             v-chat-scroll  
                             v-for="(message, index) in contacts[indexCurrentContact].messages"    
-                            :class="message.status"    
                             :key="index" >
                         
-                            <div class="msg-text" >
+                            <div :class="message.status == sent ? 'msg-right' : 'msg-text' " >
                                 {{message.message}}
                                 <div class="msg-date">{{message.date}}</div>
                             </div>
                         </div>
 
-                <!-- :class="message.status = sent ? 'msg' : 'msg-sent' " -->
+               
 
-                        <div class="msg-sent">
+
+
+                        <!-- <div class="msg-sent">
                             <div class="msg-text">
                                 prova
                                 <div class="msg-date">15/03/2015 17:00:15</div>
                             </div>
+                        </div> -->
+
+
+                        <div class="msg-right">
+                            <div class="testo">Text Balloon/</div>
+                            <div class="data">data</div>
                         </div>
+                        
+
                         
                     </div> 
                     <!--section messagge -->
