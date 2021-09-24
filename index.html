@@ -108,7 +108,8 @@
                     <!--section messagge -->
                     <div class="box-right-message">
                     <!-- ciclo v-for -->
-                        <div class="msg"  
+                        <div class="msg" 
+                            v-chat-scroll  
                             v-for="(message, index) in contacts[indexCurrentContact].messages"    
                             :class="message.status"    
                             :key="index" >
@@ -155,3 +156,4 @@
     <script src="js/scripts.js"></script>
 </body>
 </html>
+
