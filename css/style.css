@@ -208,11 +208,11 @@ ul {
 /* debug balloon text messaggi di invio personale a destra */
 .msg-inviati-verdi{
     background: rgb(213, 249, 186);
-    margin-left: auto;
+    margin-left: 55%;
     margin-top: 10px;
     width: 40%;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 10px;
     align-items: flex-end;
     word-break: break-all;
     font-weight: bold;
@@ -224,10 +224,11 @@ ul {
     width: 40%;
     padding: 10px;
     margin-top: 10px;
+    margin-left: 5%;
 }
 
 .msg-date {
-    font-size: 10px;
+    font-size: 8px;
     color: rgb(7, 160, 88);
     text-align: right;
     position: relative;

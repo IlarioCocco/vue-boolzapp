@@ -172,7 +172,7 @@ const app = new Vue({
                         message: 'Ok / Ciao (Messaggio di Risposta)',
                         status: 'received'
                     });
-            }, 1500);
+            }, 2000);
         }
     }
 });
