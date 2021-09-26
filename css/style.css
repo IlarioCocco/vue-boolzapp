@@ -51,9 +51,11 @@ ul {
 
 
 
-.contacts li.active, .active {
-    background: rgb(235, 235, 235);
+.contacts li.active, .active, li {
+    background: rgb(241, 241, 241);
+    border-bottom: 1px solid rgb(167, 228, 252)
 }
+
 
 
 /* colonna left */
@@ -62,6 +64,7 @@ ul {
     height: calc(100% - 140px);
     overflow-y: scroll;
 }
+
 
 .col-left {
     background-color: #f1f1f1;
@@ -137,6 +140,15 @@ ul {
 
 .nome-michele {
     color: rgb(0, 0, 0);
+    margin-top: 5px;
+    padding-left: 10px;
+}
+
+.ultimo-accesso{
+    display: flex;
+    color: gray;
+    margin-top: 5px;
+    padding-left: 10px;
 }
 /* --------------------------------- */
 
@@ -187,7 +199,9 @@ ul {
     display: flex;
     justify-content: space-between;
     color:lightgray;
+    align-items: center;
 }
+
 
 
 
@@ -205,6 +219,7 @@ ul {
 }
 
 
+
 /* debug balloon text messaggi di invio personale a destra */
 .msg-inviati-verdi{
     background: rgb(213, 249, 186);
@@ -216,7 +231,7 @@ ul {
     margin-left: 5%;
 }
 
-.msa-base, .msg-inviati-verdi, .msg-ricevuti-bianchi {
+.msg-inviati-verdi, .msg-ricevuti-bianchi {
     margin-top: 10px;
     width: 40%;
     padding: 10px;
@@ -234,7 +249,6 @@ ul {
     left: 5px;
 }
 /* section message */
-
 
 
 

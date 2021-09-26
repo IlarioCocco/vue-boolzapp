@@ -92,9 +92,11 @@
                                 :src="`img/avatar${contacts[indexCurrentContact].avatar}.jpg`" 
 
                                 :alt="contacts[indexCurrentContact]">
-
-                                <h4 class="nome-michele">Michele</h4>
-                                <!-- <h6 class="ultimo-accesso ">Ultimo accesso oggi alle</h6> -->
+                                <div>
+                                    <h4 class="nome-michele">Michele</h4>
+                                    <h6 class="ultimo-accesso">Ultimo accesso oggi alle</h6>
+                                </div>
+                                
                             </div>
                         </div>
 
@@ -109,10 +111,9 @@
                     <div class="box-right-message">
 
                     <!-- ciclo v-for -->
-                        <div class="msg-base"
-                            v-chat-scroll  
-                            v-for="(message, index) in contacts[indexCurrentContact].messages"    
-                            :key="index" >
+                        <div v-chat-scroll  
+                             v-for="(message, index) in contacts[indexCurrentContact].messages"    
+                             :key="index" >
                         
                             <div :class="message.status == 'sent' ? 'msg-inviati-verdi' : 'msg-ricevuti-bianchi' " >
                                 {{message.message}}
