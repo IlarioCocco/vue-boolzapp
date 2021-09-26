@@ -51,12 +51,6 @@ ul {
 
 
 
-.contacts li.active, .active, li {
-    background: rgb(241, 241, 241);
-    border-bottom: 1px solid rgb(167, 228, 252)
-}
-
-
 
 /* colonna left */
 .lista {
@@ -65,9 +59,19 @@ ul {
     overflow-y: scroll;
 }
 
+.contacts li.active, li {
+    background: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(167, 228, 252)
+}
+
+.active {
+    background: rgb(230, 230, 230);
+}
+
+
 
 .col-left {
-    background-color: #f1f1f1;
+    background-color: #ececec;
     width: 30%;
     height: 100%;
     border-right: solid lightgrey 1px;
@@ -75,7 +79,7 @@ ul {
 
 .section-header-left,
 .section-campana-left {
-    background-color:rgb(235, 235, 235);
+    background:rgb(235, 235, 235);
     height: 50px;
     display: flex;
 }
@@ -110,7 +114,7 @@ ul {
 /* --------------------------------- */
 .section-campana-left {
     display: flex;
-    background-color: hsl(199, 95%, 77%);
+    background: hsl(199, 95%, 77%);
 }
 
 .ricevi-notifiche {
@@ -279,13 +283,14 @@ ul {
 /* input element */
 .input-cerca-left, 
 .input-footer {
-    padding: 5px;
+    padding: 7px;
     display: flex;
     position: relative;
 }
 
 .input-cerca-left {
     height: 40px;
+    background: rgb(243, 243, 243);
 }
 
 .lente-avatar { 
